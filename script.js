@@ -2,7 +2,12 @@ function start(){
 
 let now = new Date();
 
-let date = now.toLocaleDateString();
+let date = now.getFullYear() + "-" +
+(now.getMonth()+1) + "-" +
+now.getDate() + " " +
+now.getHours() + ":" +
+now.getMinutes() + ":" +
+now.getSeconds();
 
 let input = document.getElementById("situation").value;
 
