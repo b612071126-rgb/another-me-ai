@@ -127,4 +127,25 @@ ${advice}
 
 `;
 
+localStorage.setItem("myReport", 
+`
+观察时间：${date}
+
+你的输入：
+${input}
+
+当前状态：
+${status}
+
+优势：
+${advantage}
+
+潜在盲点：
+${blind}
+
+未来建议：
+${advice}
+`
+);
+
 }
