@@ -3,11 +3,11 @@ function start(){
 let now = new Date();
 
 let date = now.getFullYear() + "-" +
-(now.getMonth()+1) + "-" +
-now.getDate() + " " +
-now.getHours() + ":" +
-now.getMinutes() + ":" +
-now.getSeconds();
+String(now.getMonth()+1).padStart(2,"0") + "-" +
+String(now.getDate()).padStart(2,"0") + " " +
+String(now.getHours()).padStart(2,"0") + ":" +
+String(now.getMinutes()).padStart(2,"0") + ":" +
+String(now.getSeconds()).padStart(2,"0");
 
 let input = document.getElementById("situation").value;
 
