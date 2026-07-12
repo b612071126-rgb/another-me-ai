@@ -1,5 +1,17 @@
 function start(){
 
+let input =
+document.getElementById("input").value;
+
+
+if(input==""){
+
+alert("请先输入你的想法");
+
+return;
+
+}
+
 
 document.getElementById("result").innerHTML=`
 
